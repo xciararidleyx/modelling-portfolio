@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Ciara Ridley</h1>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -45,8 +45,8 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>Instagram: <a href="https://instagram.com/yourusername" target="_blank">@yourusername</a></p>
+        <p>Email: ciararidley03@gmail.com</p>
+        <p>Instagram: <a href="https://instagram.com/xciararidleyxe" target="_blank">@xciararidleyx</a></p>
     </section>
 </body>
 </html>
