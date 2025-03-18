@@ -1,0 +1,18 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const instaFeed = document.getElementById("insta-feed");
+
+    fetch(`https://www.instagram.com/xciararidleyx/?__a=1`)
+    .then(response => response.json())
+    .then(data => {
+        let posts = data.graphql.user.edge_owner_to_timeline_media.edges;
+        posts.slice(0, 6).forEach(post => {
+            let img = document.createElement("img");
+            img.src = post.node.thumbnail_src;
+            img.alt = "Instagram Post";
+            img.style.width = "30%";
+            img.style.margin = "5px";
+            instaFeed.appendChild(img);
+        });
+    })
+    .catch(error => console.log("Error fetching Instagram feed:", error));
+});
